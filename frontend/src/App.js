@@ -1,11 +1,10 @@
 import React from "react";
-import JobForm from "./JobForm";
-import JobList from "./JobList";
+import JobForm from "./components/JobForm";
+import JobList from "./components/JobList";
 
 function App() {
   return (
-    <div>
-      <h1>Job Scheduler</h1>
+    <div className="app-container">
       <JobForm />
       <JobList />
     </div>

@@ -1,0 +1,87 @@
+/* Job List Container */
+.job-list-container {
+  padding: 20px;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+h2 {
+  text-align: center;
+  color: #2c3e50;
+  margin-bottom: 30px;
+}
+
+/* Job Cards Flex Layout */
+.job-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-evenly; /* Ensures equal spacing between cards */
+}
+
+/* Job Card */
+.job-card {
+  background-color: #ffffff; /* White background */
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  width: 320px; /* Increased card width */
+  display: flex;
+  flex-direction: column;
+}
+
+.job-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15);
+}
+
+/* Job Card Header */
+.job-card-header {
+  color: #000000; /* Changed name text color to black */
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.job-card-header h3 {
+  margin: 0;
+  font-size: 1.3rem; /* Increased font size for name */
+  color: #000000; /* Name text color set to black */
+}
+
+.job-card-header .status {
+  padding: 5px 15px;
+  font-weight: bold;
+  border-radius: 20px;
+  text-transform: capitalize;
+  font-size: 0.9rem;
+}
+
+/* Status colors */
+.job-card-header .status.pending {
+  background-color: #f39c12;
+}
+
+.job-card-header .status.running {
+  background-color: #3498db;
+}
+
+.job-card-header .status.completed {
+  background-color: #2ecc71;
+}
+
+/* Job Card Body */
+.job-card-body {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  font-size: 0.95rem;
+  border-top: 1px solid #ddd;
+}
+
+.job-card-body p {
+  margin: 5px 0;
+}

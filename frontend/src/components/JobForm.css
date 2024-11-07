@@ -1,0 +1,77 @@
+/* Job Form Container */
+.job-form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background-color: #f4f6f9; /* Light background for form section */
+}
+
+.job-form-card {
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  max-width: 100%;
+  text-align: center;
+}
+
+.job-form-card h2 {
+  margin-bottom: 20px;
+  font-size: 1.8rem;
+  color: #2c3e50;
+}
+
+/* Style the form input fields */
+.job-form-card input {
+  padding: 10px;
+  margin: 10px 10px;  /* Space between the fields */
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  outline: none;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.job-form-card input:focus {
+  border-color: #3498db;
+  box-shadow: 0 0 8px rgba(52, 152, 219, 0.5);
+}
+
+.job-form-card button {
+  width: 100%;
+  padding: 12px;
+  background-color: #3498db;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 10px;
+}
+
+.job-form-card button:hover {
+  background-color: #2980b9;
+}
+
+.job-form-card button:focus {
+  outline: none;
+}
+
+/* Flex container to arrange inputs side by side */
+.job-form-card .input-group {
+  display: flex;
+  justify-content: space-between;  /* Distribute input fields side by side */
+  margin-bottom: 15px;
+}
+
+.job-form-card .input-group label {
+  display: block;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #7f8c8d;
+  margin-bottom: 5px;
+  text-align: left;
+}
